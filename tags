@@ -1,0 +1,67 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+__HELPFNC__	helpfnc.h	2;"	d
+addr	edge_server.c	/^    struct sockaddr_storage addr;$/;"	m	struct:pxy_conn_ctx	typeref:struct:pxy_conn_ctx::sockaddr_storage	file:
+addrlen	edge_server.c	/^    socklen_t addrlen;$/;"	m	struct:pxy_conn_ctx	file:
+bev	edge_server.c	/^    struct bufferevent *bev;$/;"	m	struct:pxy_conn_desc	typeref:struct:pxy_conn_desc::bufferevent	file:
+chunked_decode	helpfnc.c	/^char* chunked_decode(char* data,size_t len,size_t* o_size)$/;"	f
+chunked_encode	helpfnc.c	/^chunked_encode(char* data, size_t len, size_t* o_size)$/;"	f
+chunked_encode2	helpfnc.c	/^chunked_encode2(char* data, size_t len, size_t* o_size)$/;"	f
+client_to_proxy_print	helpfnc.h	37;"	d
+client_to_proxy_print	helpfnc.h	47;"	d
+client_to_server_print	helpfnc.h	17;"	d
+client_to_server_print	helpfnc.h	7;"	d
+closed	edge_server.c	/^    unsigned int closed : 1;$/;"	m	struct:pxy_conn_desc	file:
+compress_and_chunkedEncoding	helpfnc.c	/^compress_and_chunkedEncoding(char* input_data, size_t i_size, size_t * o_size)$/;"	f
+connect_to_googledocs	edge_server.c	/^void connect_to_googledocs(int errcode, struct evutil_addrinfo* ai,void* arg)$/;"	f
+decompress_and_chunkedDecoding	helpfnc.c	/^decompress_and_chunkedDecoding(char* input_data,size_t i_size,size_t * o_size)$/;"	f
+dnsbase	edge_server.c	/^    struct evdns_base * dnsbase;$/;"	m	struct:pxy_conn_ctx	typeref:struct:pxy_conn_ctx::evdns_base	file:
+dst	edge_server.c	/^    pxy_conn_desc_t dst;$/;"	m	struct:pxy_conn_ctx	file:
+edge_listener_acceptcb	edge_server.c	/^void edge_listener_acceptcb(struct evconnlistener *listener, evutil_socket_t fd,$/;"	f
+edge_listener_setup	edge_server.c	/^struct evconnlistener* edge_listener_setup(struct event_base *evbase)$/;"	f
+error	edge_server.c	/^void error(const char *msg)$/;"	f
+ev	edge_server.c	/^    struct event *ev;$/;"	m	struct:pxy_conn_ctx	typeref:struct:pxy_conn_ctx::event	file:
+ev_base	edge_server.c	/^    struct event_base * ev_base;$/;"	m	struct:pxy_conn_ctx	typeref:struct:pxy_conn_ctx::event_base	file:
+fd	edge_server.c	/^    evutil_socket_t fd;$/;"	m	struct:fd_wrap	file:
+fd	edge_server.c	/^    int fd; \/\/source file descriptor;$/;"	m	struct:pxy_conn_ctx	file:
+fd_wrap	edge_server.c	/^struct fd_wrap{$/;"	s	file:
+get_id_type	helpfnc.c	/^get_id_type(const char* s,char **id, char **type)$/;"	f
+get_method	helpfnc.c	/^get_method(const char* s)$/;"	f
+get_query	helpfnc.c	/^get_query(const char* s)$/;"	f
+gzip_compress	helpfnc.c	/^gzip_compress(void* input_data, size_t i_size, size_t* o_size)$/;"	f
+gzip_uncompress	helpfnc.c	/^gzip_uncompress(void* input_data, size_t i_size, size_t* o_size)$/;"	f
+init_OpenSSL	edge_server.c	/^void init_OpenSSL()$/;"	f
+main	edge_server.c	/^int main()$/;"	f
+modify_payload	edge_server.c	/^static char*  modify_payload(char * data,size_t length, size_t* o_size){$/;"	f	file:
+multi_free	helpfnc.c	/^int multi_free(int num, ...)$/;"	f
+parse_request	helpfnc.c	/^int parse_request(char * request, char** method, char** id, char** query, char** type)$/;"	f
+proxy_to_client_print	helpfnc.h	51;"	d
+proxy_to_client_print	helpfnc.h	61;"	d
+proxy_to_server_print	helpfnc.h	65;"	d
+proxy_to_server_print	helpfnc.h	76;"	d
+pxy_bev_eventcb	edge_server.c	/^pxy_bev_eventcb(struct bufferevent *bev, short events, void *arg){$/;"	f	file:
+pxy_bev_readcb	edge_server.c	/^pxy_bev_readcb(struct bufferevent *bev, void *arg){$/;"	f	file:
+pxy_bev_writecb	edge_server.c	/^pxy_bev_writecb(struct bufferevent *bev, void *arg){$/;"	f	file:
+pxy_bufferevent_setup	edge_server.c	/^pxy_bufferevent_setup(pxy_conn_ctx_t *ctx, evutil_socket_t fd, SSL *ssl){$/;"	f	file:
+pxy_conn_ctx	edge_server.c	/^typedef struct pxy_conn_ctx{$/;"	s	file:
+pxy_conn_ctx_free	edge_server.c	/^void pxy_conn_ctx_free(pxy_conn_ctx_t * ctx)$/;"	f
+pxy_conn_ctx_init	edge_server.c	/^pxy_conn_ctx_t *pxy_conn_ctx_init()$/;"	f	file:
+pxy_conn_ctx_t	edge_server.c	/^}pxy_conn_ctx_t;$/;"	t	typeref:struct:pxy_conn_ctx	file:
+pxy_conn_desc	edge_server.c	/^typedef struct pxy_conn_desc{$/;"	s	file:
+pxy_conn_desc_t	edge_server.c	/^}pxy_conn_desc_t;$/;"	t	typeref:struct:pxy_conn_desc	file:
+sample	edge_server.c	/^const char* sample =$/;"	v
+search_character	helpfnc.c	/^char* search_character(char* data,size_t len)$/;"	f
+search_sni	edge_server.c	/^void* search_sni(void * arg)$/;"	f
+send_request	edge_server.c	/^int send_request(SSL *ssl, char * data, size_t length)$/;"	f
+server_to_client_print	helpfnc.h	22;"	d
+server_to_client_print	helpfnc.h	32;"	d
+server_to_proxy_print	helpfnc.h	80;"	d
+server_to_proxy_print	helpfnc.h	90;"	d
+setup_client_ctx	edge_server.c	/^SSL_CTX * setup_client_ctx()$/;"	f
+sni	edge_server.c	/^    char* sni;$/;"	m	struct:pxy_conn_ctx	file:
+src	edge_server.c	/^    pxy_conn_desc_t src;$/;"	m	struct:pxy_conn_ctx	file:
+ssl	edge_server.c	/^    SSL *ssl;$/;"	m	struct:pxy_conn_desc	file:
